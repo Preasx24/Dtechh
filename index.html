@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREE CRUNCHYROLL PREMIUM ACCOUNTS 🌹</title>
 
-<script type='text/javascript' src='//conductorhimselfwhipped.com/06/70/0a/06700ae74ed6d9035f7f071031360cf5.js'></script>
+    <script type='text/javascript' src='//conductorhimselfwhipped.com/06/70/0a/06700ae74ed6d9035f7f071031360cf5.js'></script>
 
     <script>
         const WAIT_TIME = 8; // Countdown time in seconds
@@ -25,17 +25,25 @@
             }
         }
 
+        function playClickSound() {
+            const beep = new Audio('beep.wav');
+            beep.play();
+        }
+
         function showAdButton() {
+            playClickSound();
             document.getElementById('ad-instructions').style.display = 'block';
             document.getElementById('get-acc-btn').style.display = 'none';
             localStorage.setItem('adClickedTime', Date.now());
         }
 
         function startCountdown() {
+            playClickSound();
             window.open(AD_URL, '_blank');
         }
 
         function checkCountdown() {
+            playClickSound();
             const adClickedTime = localStorage.getItem('adClickedTime');
 
             if (!adClickedTime) {
@@ -76,8 +84,14 @@
             document.getElementById('account-info').style.display = 'block';
         }
 
+        function reloadPage() {
+            playClickSound();
+            location.reload();
+        }
+
         window.onload = fetchAccounts;
     </script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -132,10 +146,6 @@
             font-weight: bold;
         }
     </style>
-
-
-
-
 </head>
 <body>
     <!-- Logo -->
@@ -163,12 +173,12 @@
     </div>
 
     <!-- Account Information -->
-<script async="async" data-cfasync="false" src="//conductorhimselfwhipped.com/17bdc3ff4d9e3bbe0f49799dd182c4c1/invoke.js"></script>
-<div id="container-17bdc3ff4d9e3bbe0f49799dd182c4c1"></div>
-
     <div id="account-info"></div>
 
-<script type='text/javascript' src='//conductorhimselfwhipped.com/61/51/71/61517150132ff41edb773555ec988118.js'></script>
+    <!-- Reload Button -->
+    <button onclick="reloadPage()">Reload Page</button>
+
+    <script type='text/javascript' src='//conductorhimselfwhipped.com/61/51/71/61517150132ff41edb773555ec988118.js'></script>
 
 </body>
 </html>
